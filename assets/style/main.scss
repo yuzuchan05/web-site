@@ -1,0 +1,436 @@
+@charset "UTF-8";
+
+$sp:767px;
+$pc:768px;
+
+@mixin sp {
+    @media screen and (max-width: ($sp)) {
+        @content;
+    }
+}
+@mixin pc {
+    @media screen and (min-width: ($pc)) {
+        @content;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: calc(10 * 100vw / 390);
+}
+@media (min-width:768px) {
+    html {
+        font-size: calc(10 * 100vw / 1200);
+    }
+}
+@media (min-width: 1250px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000;
+}
+* {
+    line-height: 1.2;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+a:hover {
+    opacity: 0.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+u {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+
+    @include pc {
+        justify-content: space-between;
+    }
+}
+
+.no-sp {
+    display: block;
+}
+
+.no-pc {
+    display: inherit;
+
+    @include pc {
+        display: none;
+    }
+}
+
+/* header
+-----------------------------------------*/
+.header {
+    width: 100%;
+    padding: 0;
+    height: 6.3rem;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+
+    @include pc {
+        height: 11rem;
+        overflow: visible;
+    }
+    &__container {
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include pc {
+        }
+    }
+    .logo {
+        align-items: center;
+        display: flex;
+        height: 6.3rem;
+        width: 19.7rem;
+
+        @include pc {
+            max-width: 16.6rem;
+            margin: 0 1.6rem;
+        }
+    }
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+/* ----- header-pc-nav ------ */
+.pc-nav {
+    display: none;
+
+    @include pc {
+        display: unset;
+        height: 10.1rem;
+        gap: 4.8rem;
+        margin-left: 8.3%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    ul {
+        display: none;
+
+        @include pc {
+            display: flex;
+            height: 10.1rem;
+            gap: 4.8rem;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    li a {
+        font-size: 2rem;
+        line-height: calc(36 / 20);
+        position: relative;
+        padding: .7rem 0;
+        }
+        &:hover {
+          opacity: 1;
+        }
+    }
+    .nav__btn {
+        display: none;
+
+        @include pc {
+            width: 28.2rem;
+            padding: 1.6rem 4.1rem;
+            background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
+            border-radius: 3.1rem;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+/* ----- hamburger-btn ------ */
+.hamburger__nav {
+    background: #005BAC;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+    @include pc {
+        display: none;
+    }
+}
+.hamburger__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    @include pc {
+        display: none;
+    }
+}
+.bi-list {
+    font-size: 3.8rem;
+}
+
+/* ----- hamburger-menu ------ */
+.hamburger__nav {
+    position: absolute;
+    top: 6.3rem;
+    width: 100%;
+    z-index: 100;
+    width: 35.8rem;
+    height: 21rem;
+    margin: 0 1.7rem;
+    border-radius: 2.4rem;
+    background-color: #168352;
+
+    ul {
+        display: block;
+        height: auto;
+        margin: 0;
+        padding: 3rem 0;
+        text-align: center;
+
+        @include pc {
+            height: 7.6rem;
+            gap: 4.75rem;
+            margin: 0 5rem 0 0;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+    li {
+        padding: 0 0 4rem 0;
+    }
+    a {
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #FFF;
+    }
+    i {
+        color: #fff;
+        font-size: 1.9rem;
+        font-weight: 700;
+        margin-right: 0.7rem;
+        text-shadow: 0.1rem 0.1rem 0 #005BAC, -0.1rem -0.1rem 0 #005BAC, 0.1rem -0.1rem 0 #005BAC, -0.1rem 0.1rem 0 #005BAC;
+    }
+    .nav__btn {
+        display: unset;
+        width: 35rem;
+        padding: 2rem 4.1rem;
+        border-radius: 3.1rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        background-color: #fff;
+        margin: 0 auto 3rem;
+        color: #005BAC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          opacity: 0.5;
+        }
+    }
+}
+
+/* top
+-----------------------------------------*/
+.top {
+    margin-top: 6.3rem;
+
+    &__container {
+        padding: 0 1.6rem;
+
+    }
+    &__title {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin: 1.5rem 0 2rem;
+    }
+    &__text {
+        font-size: 1.5rem;
+        padding: 0 0 3rem 0;
+        line-height: 1.6;
+    }
+    &__cover {
+
+    }
+    &__cover-sp {
+        width: 100%;
+    }
+}
+
+/* about
+-----------------------------------------*/
+.about {
+    padding: 5rem 0 0;
+
+    &__container {
+
+    }
+    &__title {
+        font-size: 1.6rem;
+        color: #168352;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+    }
+    &__title-jp {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 1rem 0 2.3rem;
+    }
+    &__contents {
+        background-image: url(/assets/image/about_us_sp.jpg);
+        background-size: cover;
+        padding: 3rem 1.6rem;
+        margin: 0 auto;
+
+        @include pc {
+            background-image: url(/assets/image/about_us_pc.png);
+        }
+    }
+    &__inner {
+        padding: 2.5rem 2.4rem;
+        background-color: #dedcd8;
+        color: #111111;
+        opacity: 0.800;
+        border-radius: 3.2rem;
+    }
+    &__catch {
+        font-size: 1.8rem;
+        color: #111111;
+        font-weight: 700;
+        line-height: 1.7;
+        padding: 0 0 1.5rem 0;
+    }
+    &__text {
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+}
+
+/* features
+-----------------------------------------*/
+.features {
+    background-color: #f3f9f6;
+    padding: 4rem 0 2rem;
+
+    &__container {
+        padding: 0 1.6rem;
+    }
+    &__title {
+        font-size: 1.6rem;
+        color: #168352;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+    }
+    &__title-jp {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 1rem 0 2.3rem;
+    }
+    &__contents {
+        border-radius: 2.4rem;
+        background-color: #fff;
+        margin: 0 0 2.5rem 0;
+    }
+    &__upper {
+        width: 100%;
+    }
+    &__down {
+        background: #fff;
+    }
+    &__text {
+        font-size: 1.8rem;
+        color: #111111;
+        font-weight: 700;
+        line-height: 1.6;
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* products
+-----------------------------------------*/
+.products {
+    padding: 4rem 0 2rem;
+
+    &__container {
+        padding: 0 1.6rem;
+    }
+    &__title {
+        font-size: 1.6rem;
+        color: #168352;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+    }
+    &__title-jp {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 1rem 0 2.3rem;
+    }
+    &__contents {
+        border-radius: 2.4rem;
+        background-color: #168352;
+        display: flex;
+        margin: 0 0 2rem;
+        padding: 1.5rem 4rem 1.5rem 2rem;
+        align-items: center;
+    }
+    &__photo {
+        width: 10rem;
+        height: 10rem;
+    }
+    &__vertical {
+        display: inline-block;
+    }
+    &__name {
+        font-size: 1.8rem;
+        color: #fff;
+        font-weight: 700;
+        padding: 0 0 0 2rem;
+        line-height: 1.6;
+    }
+}
