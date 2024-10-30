@@ -36,23 +36,23 @@
 
         <header class="header">
             <div class="header__container">
-                <div class="logo">
-                    <a href="/"><img src="/assets/image/header_logo.svg" alt="Kirameki Farm"></a>
+                <div class="header__logo">
+                    <a href="/"><img class="header__logo-image" src="/assets/image/header_logo.svg" alt="Kirameki Farm"></a>
                 </div>
-                <nav class="nav flex pc-nav">
-                    <ul class="flex">
-                        <li><a href="#price">価格・スペック</a></li>
-                        <li><a href="#faq">よくあるご質問</a></li>
+                <nav class="header__nav-pc">
+                    <ul class="header__nav-pc-list">
+                        <li class="header__nav-pc-list-item"><a href="#price">価格・スペック</a></li>
+                        <li class="header__nav-pc-list-item"><a href="#faq">よくあるご質問</a></li>
                     </ul>
                 </nav>
-                <div class="no-pc hamburger__icon">
+                <div class="no-pc header__hamburger-icon">
                     <img src="/assets/image/humberger.svg" alt="">
                 </div>
-                <div class="nav hamburger__nav">
-                    <ul>
-                        <li><a href="/">トップ</a></li>
-                        <li><a href="#price">価格・スペック</a></li>
-                        <li><a href="#faq">よくあるご質問</a></li>
+                <div class="hamburger">
+                    <ul class="hamburger__nav-list">
+                        <li class="hamburger__nav-list-item"><a class="hamburger__nav-list-text" href="/">トップ</a></li>
+                        <li class="hamburger__nav-list-item"><a class="hamburger__nav-list-text" href="#price">価格・スペック</a></li>
+                        <li class="hamburger__nav-list-item"><a class="hamburger__nav-list-text" href="#faq">よくあるご質問</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,9 +63,9 @@
             <div class="top__container">
                 <h1 class="top__title">持続可能な農業を目指す</h1>
                 <p class="top__text">キラメキファームは革新的デザインの農業機器で未来の農業を実現。ビッグデータ・自動運転ロボット・リジェネラティブ農業で環境に優しい効率化を目指す。</p>
-                <picture class="top__cover">
+                <picture>
                     <source srcset="/assets/image/cover_pc.png" media="(min-width: 768px)">
-                    <img class="top__cover-sp" src="/assets/image/cover_sp.png" alt="">
+                    <img class="top__cover-image" src="/assets/image/cover_sp.png" alt="">
                 </picture>
             </div>
         </div>

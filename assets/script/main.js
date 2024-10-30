@@ -1,10 +1,14 @@
 /* ハンバーガーメニュー
 -----------------------------------------*/
-$(".hamburger__icon").on("click", function (e) {
-  $(".hamburger__nav").slideToggle();
-});
+$(document).ready(function () {
+    $(".hamburger").hide();
 
-// ハンバーガーメニューを閉じる
-$('.hamburger__nav a[href^="#"]').click(function () {
-  $(".hamburger__nav").slideUp();
+    $(".header__hamburger-icon").on("click", function (e) {
+        $(".hamburger").slideToggle();
+    });
+
+    // ハンバーガーメニューを閉じる
+    $('.hamburger a[href^="#"]').click(function () {
+        $(".hamburger").slideUp();
+    });
 });

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
   font-size: 2.5641025641vw;
@@ -18,11 +19,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   color: #000;
-}
-
-* {
-  line-height: 1.2;
-  box-sizing: border-box;
+  line-height: 1.75;
 }
 
 img {
@@ -51,16 +48,6 @@ li {
   list-style: none;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (min-width: 768px) {
-  .flex {
-    justify-content: space-between;
-  }
-}
-
 .no-sp {
   display: block;
 }
@@ -84,6 +71,7 @@ li {
   top: 0;
   background: #fff;
   z-index: 1000;
+  /* ----- header-nav-pc ------ */
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -97,29 +85,27 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-.header .logo {
+.header__logo {
   align-items: center;
   display: flex;
   height: 6.3rem;
   width: 19.7rem;
 }
 @media screen and (min-width: 768px) {
-  .header .logo {
+  .header__logo {
     max-width: 16.6rem;
     margin: 0 1.6rem;
   }
 }
-.header img {
+.header__logo-image {
   max-width: 100%;
   width: 100%;
 }
-
-/* ----- header-pc-nav ------ */
-.pc-nav {
+.header__nav-pc {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .pc-nav {
+  .header__nav-pc {
     display: unset;
     height: 10.1rem;
     gap: 4.8rem;
@@ -128,11 +114,11 @@ li {
     justify-content: flex-end;
   }
 }
-.pc-nav ul {
+.header__nav-pc-list {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .pc-nav ul {
+  .header__nav-pc-list {
     display: flex;
     height: 10.1rem;
     gap: 4.8rem;
@@ -140,66 +126,15 @@ li {
     justify-content: flex-end;
   }
 }
-.pc-nav ul li a {
+.header__nav-pc-list__nav-pc-list-item {
   font-size: 2rem;
   line-height: 1.8;
   position: relative;
   padding: 0.7rem 0;
 }
-.pc-nav ul:hover {
-  opacity: 1;
-}
-.pc-nav .nav__btn {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .pc-nav .nav__btn {
-    width: 28.2rem;
-    padding: 1.6rem 4.1rem;
-    background: linear-gradient(90deg, #0271E0 0%, #53A2F0 100%);
-    border-radius: 3.1rem;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 
-/* ----- hamburger-btn ------ */
-.hamburger__nav {
-  background: #005BAC;
-  position: absolute;
-  top: 7rem;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-}
-@media screen and (min-width: 768px) {
-  .hamburger__nav {
-    display: none;
-  }
-}
-
-.hamburger__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .hamburger__icon {
-    display: none;
-  }
-}
-
-.bi-list {
-  font-size: 3.8rem;
-}
-
-/* ----- hamburger-menu ------ */
-.hamburger__nav {
+/* ----- hamburger ------ */
+.hamburger {
   position: absolute;
   top: 6.3rem;
   width: 100%;
@@ -209,8 +144,25 @@ li {
   margin: 0 1.7rem;
   border-radius: 2.4rem;
   background-color: #168352;
+  visibility: hidden;
 }
-.hamburger__nav ul {
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+.hamburger__hamburger-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .hamburger__hamburger-icon {
+    display: none;
+  }
+}
+.hamburger__nav-list {
   display: block;
   height: auto;
   margin: 0;
@@ -218,7 +170,7 @@ li {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .hamburger__nav ul {
+  .hamburger__nav-list {
     height: 7.6rem;
     gap: 4.75rem;
     margin: 0 5rem 0 0;
@@ -226,38 +178,15 @@ li {
     justify-content: flex-end;
   }
 }
-.hamburger__nav li {
+.hamburger__nav-list-item {
   padding: 0 0 4rem 0;
-}
-.hamburger__nav a {
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1;
   color: #FFF;
 }
-.hamburger__nav i {
-  color: #fff;
-  font-size: 1.9rem;
-  font-weight: 700;
-  margin-right: 0.7rem;
-  text-shadow: 0.1rem 0.1rem 0 #005BAC, -0.1rem -0.1rem 0 #005BAC, 0.1rem -0.1rem 0 #005BAC, -0.1rem 0.1rem 0 #005BAC;
-}
-.hamburger__nav .nav__btn {
-  display: unset;
-  width: 35rem;
-  padding: 2rem 4.1rem;
-  border-radius: 3.1rem;
-  font-size: 1.8rem;
-  font-weight: 700;
-  background-color: #fff;
-  margin: 0 auto 3rem;
-  color: #005BAC;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hamburger__nav .nav__btn:hover {
-  opacity: 0.5;
+.hamburger__nav-list-text {
+  color: #FFF;
 }
 
 /* top
@@ -278,7 +207,7 @@ li {
   padding: 0 0 3rem 0;
   line-height: 1.6;
 }
-.top__cover-sp {
+.top__cover-image {
   width: 100%;
 }
 
@@ -399,10 +328,25 @@ li {
   margin: 0 0 2rem;
   padding: 1.5rem 4rem 1.5rem 2rem;
   align-items: center;
+  position: relative;
+}
+.products__contents:hover::after {
+  content: "ロボット技術";
+  background-color: #dffaec;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 700;
 }
 .products__photo {
   width: 10rem;
   height: 10rem;
+  overflow: hidden;
+}
+.products__photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .products__vertical {
   display: inline-block;
