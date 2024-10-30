@@ -158,7 +158,6 @@ li {
     margin: 0 1.7rem;
     border-radius: 2.4rem;
     background-color: #168352;
-    visibility: hidden;
 
     @include pc {
         display: none;
@@ -348,11 +347,23 @@ li {
         align-items: center;
         position: relative;
 
+        &:hover {
+            content: "ロボット技術";
+            background-color: #dffaec;
+            color: #168352;
+            font-size: 1.8rem;
+            font-weight: 700;
+
+            .products__name {
+              opacity: 0;
+            }
+        }
+
         &:hover::after {
             content: "ロボット技術";
             background-color: #dffaec;
             font-size: 1.8rem;
-            color: #fff;
+            color: #168352;
             font-weight: 700;
         }
     }

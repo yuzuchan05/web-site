@@ -144,7 +144,6 @@ li {
   margin: 0 1.7rem;
   border-radius: 2.4rem;
   background-color: #168352;
-  visibility: hidden;
 }
 @media screen and (min-width: 768px) {
   .hamburger {
@@ -330,11 +329,21 @@ li {
   align-items: center;
   position: relative;
 }
+.products__contents:hover {
+  content: "ロボット技術";
+  background-color: #dffaec;
+  color: #168352;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.products__contents:hover .products__name {
+  opacity: 0;
+}
 .products__contents:hover::after {
   content: "ロボット技術";
   background-color: #dffaec;
   font-size: 1.8rem;
-  color: #fff;
+  color: #168352;
   font-weight: 700;
 }
 .products__photo {
