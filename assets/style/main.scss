@@ -496,7 +496,9 @@ li {
         }
     }
     &__btn {
-        max-width: 30rem;
+        width: 30rem;
+        display: inline-block;
+        text-align: center;
         padding: 0.8rem 1rem 0.7rem;
         height: 6.6rem;
         border-radius: 3.3rem;
