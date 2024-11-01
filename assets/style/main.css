@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
   font-size: 2.5641025641vw;
@@ -77,6 +78,7 @@ li {
   background: #fff;
   z-index: 1000;
   /* ----- header-nav-pc ------ */
+  /* ----- header-nav-pc 2ページ目------ */
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -157,7 +159,7 @@ li {
   z-index: 100;
   width: 35.8rem;
   height: 21rem;
-  margin: 0 1.9rem 0 0.5rem;
+  margin: 0 auto;
   border-radius: 2.4rem;
   background-color: #168352;
   display: none;
@@ -259,6 +261,70 @@ li {
   }
 }
 
+/* top 2ページ目
+-----------------------------------------*/
+.price-top {
+  margin-top: 6.3rem;
+}
+@media screen and (min-width: 768px) {
+  .price-top {
+    margin-top: 11.4rem;
+  }
+}
+.price-top__container {
+  padding: 0 1.6rem 0;
+  margin: 2rem 0 2rem;
+}
+@media screen and (min-width: 768px) {
+  .price-top__container {
+    padding: 2rem 1.6rem 3rem;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+}
+.price-top__cover-image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .price-top__cover-image {
+    max-width: 116.8rem;
+    margin: 0 auto;
+    display: block;
+  }
+}
+.price-top__title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 1.5rem 0 2rem;
+}
+@media screen and (min-width: 768px) {
+  .price-top__title {
+    font-size: 4rem;
+    margin: 0;
+    width: 50%;
+    padding: 0 0 0 3rem;
+  }
+}
+.price-top__item {
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+}
+.price-top__text {
+  font-size: 1.2rem;
+  padding: 0 0 1rem 0;
+}
+@media screen and (min-width: 768px) {
+  .price-top__text {
+    padding: 3.3rem 2.5rem 0 2.5rem;
+    width: 50%;
+  }
+}
+.price-top__arrow {
+  width: 0.5rem;
+  height: 1rem;
+  margin: 0 0.5rem;
+}
 /* about
 -----------------------------------------*/
 .about {
@@ -362,6 +428,62 @@ li {
   }
 }
 
+/* gallery 2ページ目
+-----------------------------------------*/
+.gallery {
+  padding: 1rem 1.6rem 0;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding: 5rem 0 5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+}
+.gallery__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 1rem 0 2.3rem;
+}
+@media screen and (min-width: 768px) {
+  .gallery__title {
+    font-size: 2.8rem;
+  }
+}
+.gallery__line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dddddd;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  height: 0.2rem;
+}
+.gallery__line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #168352;
+  height: 100%;
+  width: var(--percentage, 15%);
+}
+.gallery__image {
+  padding: 2rem 0 2rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .gallery__image {
+    padding: 0 1rem;
+  }
+}
+
 /* features
 -----------------------------------------*/
 .features {
@@ -441,6 +563,81 @@ li {
   .features__text {
     font-size: 1.9rem;
     padding: 1.5rem 1.9rem;
+  }
+}
+
+/* features 2ページ目
+-----------------------------------------*/
+.price-features {
+  padding: 1rem 1.6rem 0;
+}
+@media screen and (min-width: 768px) {
+  .price-features {
+    padding: 5rem 0 5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .price-features__container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+}
+.price-features__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 1rem 0 2.3rem;
+}
+@media screen and (min-width: 768px) {
+  .price-features__title {
+    font-size: 2.8rem;
+  }
+}
+.price-features__line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dddddd;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  height: 0.2rem;
+}
+.price-features__line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #168352;
+  height: 100%;
+  width: var(--percentage, 15%);
+}
+.price-features__item {
+  margin: 0 0 1.5rem 0;
+}
+@media screen and (min-width: 768px) {
+  .price-features__item {
+    display: flex;
+  }
+}
+.price-features__image {
+  padding: 2rem 0 2rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .price-features__image {
+    padding: 0 1rem;
+  }
+}
+.price-features__text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-break: anywhere;
+  letter-spacing: 0.005rem;
+}
+@media screen and (min-width: 768px) {
+  .price-features__text {
+    font-size: 1.8rem;
   }
 }
 
@@ -576,6 +773,66 @@ li {
   }
 }
 
+/* price 2ページ目
+-----------------------------------------*/
+.price {
+  padding: 2rem 1.6rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  .price {
+    padding: 5rem 0 5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .price__container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+}
+.price__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 1rem 0 2.3rem;
+}
+@media screen and (min-width: 768px) {
+  .price__title {
+    font-size: 2.8rem;
+  }
+}
+.price__line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dddddd;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  height: 0.2rem;
+}
+.price__line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #168352;
+  height: 100%;
+  width: var(--percentage, 15%);
+}
+.price__text {
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .price__text {
+    font-size: 4rem;
+  }
+}
+.price__small {
+  font-size: 2rem;
+}
+
 /* case
 -----------------------------------------*/
 .case {
@@ -642,6 +899,121 @@ li {
   .case__name {
     letter-spacing: 0;
     padding: 1rem 0 0 0;
+  }
+}
+
+/* spec 2ページ目
+-----------------------------------------*/
+.spec {
+  padding: 2rem 1.6rem 4rem;
+}
+@media screen and (min-width: 768px) {
+  .spec {
+    padding: 5rem 0 5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .spec__container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+}
+.spec__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 1rem 0 2.3rem;
+}
+@media screen and (min-width: 768px) {
+  .spec__title {
+    font-size: 2.8rem;
+  }
+}
+.spec__line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dddddd;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  height: 0.2rem;
+}
+.spec__line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #168352;
+  height: 100%;
+  width: var(--percentage, 15%);
+}
+.spec__sub-title {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 0 2.3rem 1.6rem;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .spec__sub-title {
+    font-size: 2.8rem;
+  }
+}
+.spec__sub-title::before {
+  content: "";
+  background-color: #168352;
+  position: absolute;
+  height: 3rem;
+  width: 0.2rem;
+  top: 1.3rem;
+  left: -0.1rem;
+}
+.spec__table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 0.1rem solid #dddddd;
+}
+@media screen and (min-width: 768px) {
+  .spec__table {
+    min-height: 34.3rem;
+    margin-bottom: 0;
+  }
+}
+.spec__table-inner {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.spec__table-item, .spec__table-discription {
+  display: block;
+  border: 0.1rem solid #dddddd;
+}
+@media screen and (max-width: 767.9px) {
+  .spec__table-item, .spec__table-discription {
+    padding: 0;
+  }
+}
+.spec__table-item {
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: #f5f5f5;
+  padding: 0.8rem 1.2rem 0.8rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  .spec__table-item {
+    font-size: 1.4rem;
+    padding: 1.3rem 0 1rem;
+  }
+}
+.spec__table-discription {
+  font-size: 1.6rem;
+  padding: 0.8rem 1.2rem 0.8rem 2rem;
+}
+@media screen and (min-width: 768px) {
+  .spec__table-discription {
+    font-size: 2.8rem;
+    top: -0.6rem;
+    padding: 1.17rem 0.5rem 1.1rem 0;
   }
 }
 
@@ -771,6 +1143,55 @@ li {
   opacity: 1;
 }
 
+/* contact 2ページ目
+-----------------------------------------*/
+.contact {
+  background-image: url(/assets/image/footer_price_sp.jpg);
+  background-size: cover;
+  height: 36rem;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    background-image: url(/assets/image/footer_price_pc.png);
+  }
+}
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  position: relative;
+}
+.contact__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.contact__btn {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  border: 0.2rem solid #fff;
+  border-radius: 4rem;
+  width: 35rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.contact__btn:hover {
+  background-color: #fff;
+  color: #168352;
+  opacity: 1;
+}
+
 /* footer
 -----------------------------------------*/
 .footer {
@@ -811,5 +1232,4 @@ li {
     font-size: 1.5rem;
     padding-left: 2.3rem;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

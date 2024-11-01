@@ -150,6 +150,7 @@ li {
             font-weight: 700;
         }
     }
+    /* ----- header-nav-pc 2ページ目------ */
     &__nav-pc-list-price {
         @include pc {
             color: #168352;
@@ -165,7 +166,7 @@ li {
     z-index: 100;
     width: 35.8rem;
     height: 21rem;
-    margin: 0 1.9rem 0 0.5rem;
+    margin: 0 auto;
     border-radius: 2.4rem;
     background-color: #168352;
     display: none;
@@ -258,6 +259,75 @@ li {
             max-width: 116.8rem;
             margin: 0 auto;
             display: block;
+        }
+    }
+}
+
+/* top 2ページ目
+-----------------------------------------*/
+.price-top {
+    margin-top: 6.3rem;
+
+    @include pc {
+        margin-top: 11.4rem;
+    }
+
+    &__container {
+        padding: 0 1.6rem 0;
+        margin: 2rem 0 2rem;
+
+        @include pc {
+            padding: 2rem 1.6rem 3rem;
+            max-width: 120rem;
+            margin: 0 auto;
+        }
+    }
+    &__cover-image {
+        width: 100%;
+
+        @include pc {
+            max-width: 116.8rem;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    &__title {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin: 1.5rem 0 2rem;
+
+        @include pc {
+            font-size: 4rem;
+            margin: 0;
+            width: 50%;
+            padding: 0 0 0 3rem;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: baseline;
+        justify-content: end;
+
+        @include pc {
+
+        }
+    }
+    &__text {
+        font-size: 1.2rem;
+        padding: 0 0 1rem 0;
+
+        @include pc {
+            padding: 3.3rem 2.5rem 0 2.5rem;
+            width: 50%;
+        }
+    }
+    &__arrow {
+        width: 0.5rem;
+        height: 1rem;
+        margin: 0 0.5rem;
+
+        @include pc {
+
         }
     }
 }
@@ -359,6 +429,65 @@ li {
     }
 }
 
+/* gallery 2ページ目
+-----------------------------------------*/
+.gallery {
+    padding: 1rem 1.6rem 0;
+
+    @include pc {
+        padding: 5rem 0 5rem;
+    }
+
+    &__container {
+        @include pc {
+            max-width: 120rem;
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        padding: 1rem 0 2.3rem;
+
+        @include pc {
+            font-size: 2.8rem;
+        }
+    }
+    &__line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #dddddd;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        height: 0.2rem;
+
+        @include pc {
+
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #168352;
+            height: 100%;
+            width: var(--percentage, 15%);
+        }
+    }
+    &__image {
+        padding: 2rem 0 2rem;
+        margin: 0 auto;
+
+        @include pc {
+            padding: 0 1rem;
+        }
+    }
+}
+
 /* features
 -----------------------------------------*/
 .features {
@@ -432,6 +561,82 @@ li {
         @include pc {
             font-size: 1.9rem;
             padding: 1.5rem 1.9rem;
+        }
+    }
+}
+
+/* features 2ページ目
+-----------------------------------------*/
+.price-features {
+    padding: 1rem 1.6rem 0;
+
+    @include pc {
+        padding: 5rem 0 5rem;
+    }
+
+    &__container {
+        @include pc {
+            max-width: 120rem;
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        padding: 1rem 0 2.3rem;
+
+        @include pc {
+            font-size: 2.8rem;
+        }
+    }
+    &__line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #dddddd;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        height: 0.2rem;
+
+        @include pc {
+
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #168352;
+            height: 100%;
+            width: var(--percentage, 15%);
+        }
+    }
+    &__item {
+        margin: 0 0 1.5rem 0;
+
+        @include pc {
+            display: flex;
+        }
+    }
+    &__image {
+        padding: 2rem 0 2rem;
+        margin: 0 auto;
+
+        @include pc {
+            padding: 0 1rem;
+        }
+    }
+    &__text {
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-break: anywhere;
+        letter-spacing: 0.005rem;
+
+        @include pc {
+            font-size: 1.8rem;
         }
     }
 }
@@ -563,6 +768,69 @@ li {
     }
 }
 
+/* price 2ページ目
+-----------------------------------------*/
+.price {
+    padding: 2rem 1.6rem 2rem;
+
+    @include pc {
+        padding: 5rem 0 5rem;
+    }
+
+    &__container {
+        @include pc {
+            max-width: 120rem;
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        padding: 1rem 0 2.3rem;
+
+        @include pc {
+            font-size: 2.8rem;
+        }
+    }
+    &__line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #dddddd;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        height: 0.2rem;
+
+        @include pc {
+
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #168352;
+            height: 100%;
+            width: var(--percentage, 15%);
+        }
+    }
+    &__text {
+        font-size: 3.2rem;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+
+        @include pc {
+            font-size: 4rem;
+        }
+    }
+    &__small {
+        font-size: 2rem;
+    }
+}
+
 /* case
 -----------------------------------------*/
 .case {
@@ -627,6 +895,124 @@ li {
         }
     }
 }
+
+/* spec 2ページ目
+-----------------------------------------*/
+.spec {
+    padding: 2rem 1.6rem 4rem;
+
+    @include pc {
+        padding: 5rem 0 5rem;
+    }
+
+    &__container {
+        @include pc {
+            max-width: 120rem;
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        padding: 1rem 0 2.3rem;
+
+        @include pc {
+            font-size: 2.8rem;
+        }
+    }
+    &__line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #dddddd;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        height: 0.2rem;
+
+        @include pc {
+
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #168352;
+            height: 100%;
+            width: var(--percentage, 15%);
+        }
+    }
+    &__sub-title {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1rem 0 2.3rem 1.6rem;
+        position: relative;
+
+        @include pc {
+            font-size: 2.8rem;
+        }
+
+        &::before {
+            content: "";
+            background-color: #168352;
+            position: absolute;
+            height: 3rem;
+            width: 0.2rem;
+            top: 1.3rem;
+            left: -0.1rem;
+        }
+    }
+
+    &__table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 0.1rem solid #dddddd;
+
+        @include pc {
+            min-height: 34.3rem;
+            margin-bottom: 0;
+        }
+    }
+    &__table-inner {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+    &__table-item,
+    &__table-discription {
+        display: block;
+        border: 0.1rem solid #dddddd;
+
+        @include sp {
+            padding: 0;
+        }
+    }
+    &__table-item {
+        font-size: 1.6rem;
+        font-weight: 700;
+        background-color: #f5f5f5;
+        padding: 0.8rem 1.2rem 0.8rem 2rem;
+
+        @include pc {
+            font-size: 1.4rem;
+            padding: 1.3rem 0 1rem;
+        }
+    }
+    &__table-discription {
+        font-size: 1.6rem;
+        padding: 0.8rem 1.2rem 0.8rem 2rem;
+
+        @include pc {
+            font-size: 2.8rem;
+            top: -0.6rem;
+            padding: 1.17rem 0.5rem 1.1rem 0;
+        }
+    }
+}
+
 
 /* news
 -----------------------------------------*/
@@ -741,6 +1127,56 @@ li {
         &:hover {
             box-shadow: 0 0.1rem 0 rgba(6, 102, 85);
             transform: translateY(0.3rem);
+            opacity: 1;
+        }
+    }
+}
+
+/* contact 2ページ目
+-----------------------------------------*/
+.contact {
+    background-image: url(/assets/image/footer_price_sp.jpg);
+    background-size: cover;
+    height: 36rem;
+    position: relative;
+
+    @include pc {
+        background-image: url(/assets/image/footer_price_pc.png);
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        position: relative;
+    }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    &__btn {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #fff;
+        border: 0.2rem solid #fff;
+        border-radius: 4rem;
+        width: 35rem;
+        height: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+            background-color: #fff;
+            color: #168352;
             opacity: 1;
         }
     }
