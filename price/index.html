@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+s<!DOCTYPE html>
 <html lang="ja">
 
 <head>
@@ -39,7 +39,7 @@
                 </div>
                 <nav class="header__nav-pc">
                     <ul class="header__nav-pc-list">
-                        <li class="header__nav-pc-list-item header__nav-pc-list-price"><a href="#price">価格・スペック</a></li>
+                        <li class="header__nav-pc-list-item"><a class="header__nav-pc-list-price" href="#price">価格・スペック</a></li>
                         <li class="header__nav-pc-list-item"><a href="#faq">よくあるご質問</a></li>
                     </ul>
                 </nav>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="hamburger">
                     <ul class="hamburger__nav-list">
-                        <li class="hamburger__nav-list-item"><a class="hamburger__nav-list-text" href="/">トップ</a></li>
+                        <li class="hamburger__nav-list-item"><a class="hamburger__nav-list-text" href="#">トップ</a></li>
                         <li class="hamburger__nav-list-item"><a class="hamburger__nav-list-text" href="#price">価格・スペック</a></li>
                         <li class="hamburger__nav-list-item"><a class="hamburger__nav-list-text" href="#faq">よくあるご質問</a></li>
                     </ul>
@@ -64,11 +64,11 @@
                     <source srcset="/assets/image/products_cover_pc.png" media="(min-width: 768px)">
                     <img class="price-top__cover-image" src="/assets/image/products_cover_sp.png" alt="">
                 </picture>
-                <h1 class="price-top__title">価格・スペック</h1>
+                <h1 class="price-top__title"><a href="/">価格・スペック</a></h1>
                 <div class="price-top__item">
-                    <p class="price-top__text">トップ</p>
+                    <p class="price-top__text"><a href="/">トップ</a></p>
                     <img class="price-top__arrow" src="/assets/image/arrow.png" alt="">
-                    <p class="price-top__text">価格・スペック</p>
+                    <p class="price-top__text"><a href="/">価格・スペック</a></p>
                 </div>
             </div>
         </div>
@@ -79,10 +79,23 @@
             <div class="gallery__container">
                 <h2 class="gallery__title">ギャラリー</h2>
                 <div class="gallery__line"></div>
-                <picture>
-                    <source srcset="/assets/image/service_01_pc.png" media="(min-width: 768px)">
-                    <img class="gallery__image" src="/assets/image/service_01_sp.png" alt="">
-                </picture>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="/assets/image/gallery_01_pc.png" media="(min-width: 768px)">
+                                <img class="gallery__image" src="/assets/image/gallery_01_sp.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="gallery__image" src="/assets/image/gallery_02.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="gallery__image" src="/assets/image/gallery_03.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section>
 
@@ -92,18 +105,30 @@
             <div class="price-features__container">
                 <h2 class="price-features__title">特徴</h2>
                 <div class="price-features__line"></div>
-                <div class="price-features__item">
-                    <img class="price-features__image" src="/assets/image/service_02.png" alt="">
-                    <p class="price-features__text">自動操縦が可能で、短時間で大量の農作物を監視、収穫、播種、散布などの作業ができます。</p>
+                <div class="price-features__flex">
+                    <div class="price-features__item">
+                        <img class="price-features__image" src="/assets/image/service_01.png" alt="">
+                        <p class="price-features__text">自動操縦が可能で、短時間で大量の農作物を監視、収穫、播種、散布などの作業ができます。</p>
+                    </div>
+                    <div class="price-features__item">
+                        <img class="price-features__image" src="/assets/image/service_02.png" alt="">
+                        <p class="price-features__text">高精度のカメラやセンサーを搭載しており、正確な土壌・作物の情報を収集でき、水や肥料などの資源を適切に配分できます。</p>
+                    </div>
+                    <div class="price-features__item">
+                        <img class="price-features__image" src="/assets/image/service_03.png" alt="">
+                        <p class="price-features__text">必要な場所にだけ肥料や農薬を散布することができます。これにより、農薬や肥料の過剰使用が抑えられ、環境負荷やコスト削減に繋がります。</p>
+                    </div>
                 </div>
-                <div class="price-features__item">
-                    <img class="price-features__image" src="/assets/image/service_03.png" alt="">
-                    <p class="price-features__text">高精度のカメラやセンサーを搭載しており、正確な土壌・作物の情報を収集でき、水や肥料などの資源を適切に配分できます。</p>
-                </div>
-                <div class="price-features__item">
-                    <img class="price-features__image" src="/assets/image/service_04.png" alt="">
-                    <p class="price-features__text">必要な場所にだけ肥料や農薬を散布することができます。これにより、農薬や肥料の過剰使用が抑えられ、環境負荷やコスト削減に繋がります。</p>
-                </div>
+            </div>
+        </section>
+
+    <!------------ price ------------>
+
+        <section class="price">
+            <div class="price__container">
+                <h2 class="price__title">メーカー希望小売価格</h2>
+                <div class="price__line"></div>
+                <div class="price__text">¥550,000<span class="price__small">（税込）</span></div>
             </div>
         </section>
 
@@ -111,7 +136,7 @@
 
         <section class="spec">
             <div class="spec__container">
-                <h2 class="spec__title">メーカー希望小売価格</h2>
+                <h2 class="spec__title">スペック</h2>
                 <div class="spec__line"></div>
                 <h3 class="spec__sub-title">機体</h3>
                 <div class="spec__contents">
