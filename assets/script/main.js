@@ -36,3 +36,11 @@ var mySwiper = new Swiper(".swiper", {
         },
     },
 });
+
+
+/* acordion
+-----------------------------------------*/
+$('.faq__item').on('click',function() {
+    $(this).parent().toggleClass("open");
+    $(this).next().slideToggle();
+});

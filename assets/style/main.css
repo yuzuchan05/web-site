@@ -228,7 +228,8 @@ li {
 .top__title {
   font-size: 2.8rem;
   font-weight: 700;
-  margin: 1.5rem 0 2rem;
+  margin: 0 0 1.7rem;
+  padding-top: 0.8rem;
 }
 @media screen and (min-width: 768px) {
   .top__title {
@@ -240,9 +241,9 @@ li {
 }
 .top__text {
   font-size: 1.5rem;
-  padding: 0 0 3rem 0;
-  line-height: 1.6;
-  line-break: auto;
+  padding: 0 0 2.6rem 0;
+  line-height: 1.73;
+  line-break: anywhere;
 }
 @media screen and (min-width: 768px) {
   .top__text {
@@ -261,45 +262,53 @@ li {
   }
 }
 
-/* top 2ページ目
+/* top 2ページ目, 3ページ目
 -----------------------------------------*/
-.price-top {
+.price-top,
+.faq-top {
   margin-top: 6.3rem;
 }
 @media screen and (min-width: 768px) {
-  .price-top {
+  .price-top,
+  .faq-top {
     margin-top: 11.4rem;
   }
 }
-.price-top__container {
+.price-top__container,
+.faq-top__container {
   padding: 0 1.6rem 0;
   margin: 2rem 0 2rem;
 }
 @media screen and (min-width: 768px) {
-  .price-top__container {
+  .price-top__container,
+  .faq-top__container {
     padding: 2rem 2.6rem 3rem;
     max-width: 121rem;
     margin: 0 auto;
   }
 }
-.price-top__cover-image {
+.price-top__cover-image,
+.faq-top__cover-image {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .price-top__cover-image {
+  .price-top__cover-image,
+  .faq-top__cover-image {
     max-width: 116.8rem;
     margin: 0 auto;
     display: block;
     position: relative;
   }
 }
-.price-top__title {
+.price-top__title,
+.faq-top__title {
   font-size: 2.8rem;
   font-weight: 700;
   margin: 1.5rem 0 2rem;
 }
 @media screen and (min-width: 768px) {
-  .price-top__title {
+  .price-top__title,
+  .faq-top__title {
     font-size: 3.6rem;
     margin: 0;
     width: 32.7rem;
@@ -310,32 +319,38 @@ li {
     border-radius: 0 4rem 0 0;
   }
 }
-.price-top__item {
+.price-top__item,
+.faq-top__item {
   display: flex;
   align-items: baseline;
   justify-content: end;
 }
 @media screen and (min-width: 768px) {
-  .price-top__item {
+  .price-top__item,
+  .faq-top__item {
     padding: 2rem 0 0 0;
   }
 }
-.price-top__text {
+.price-top__text,
+.faq-top__text {
   font-size: 1.2rem;
   padding: 0 0 1rem 0;
 }
 @media screen and (min-width: 768px) {
-  .price-top__text {
+  .price-top__text,
+  .faq-top__text {
     padding: 0;
   }
 }
-.price-top__arrow {
+.price-top__arrow,
+.faq-top__arrow {
   width: 0.5rem;
   height: 1rem;
   margin: 0 0.5rem;
 }
 @media screen and (min-width: 768px) {
-  .price-top__arrow {
+  .price-top__arrow,
+  .faq-top__arrow {
     margin: 0 1rem;
   }
 }
@@ -343,7 +358,7 @@ li {
 /* about
 -----------------------------------------*/
 .about {
-  padding: 5rem 0 0;
+  padding: 5.1rem 0 0;
 }
 @media screen and (min-width: 768px) {
   .about {
@@ -362,6 +377,7 @@ li {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  line-height: 1.36;
 }
 @media screen and (min-width: 768px) {
   .about__title {
@@ -372,7 +388,7 @@ li {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  padding: 1rem 0 2.3rem;
+  padding: 0rem 0 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .about__title-jp {
@@ -382,7 +398,7 @@ li {
 .about__contents {
   background-image: url(/assets/image/about_us_sp.jpg);
   background-size: cover;
-  padding: 3rem 1.6rem;
+  padding: 3.2rem 1.6rem;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -397,7 +413,7 @@ li {
   }
 }
 .about__inner {
-  padding: 2.5rem 2.4rem;
+  padding: 1.5rem 2.5rem 1.8rem;
   background-color: #dedcd8;
   color: #111111;
   opacity: 0.8;
@@ -416,8 +432,8 @@ li {
   font-size: 1.8rem;
   color: #111111;
   font-weight: 700;
-  line-height: 1.7;
-  padding: 0 0 1.5rem 0;
+  line-height: 1.75;
+  padding: 0 0 0.7rem 0;
 }
 @media screen and (min-width: 768px) {
   .about__catch {
@@ -427,7 +443,7 @@ li {
 }
 .about__text {
   font-size: 1.5rem;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 @media screen and (min-width: 768px) {
   .about__text {
@@ -544,11 +560,139 @@ li {
   }
 }
 
+/* faq 3ページ目
+-----------------------------------------*/
+.faq {
+  padding: 3.4rem 1.6rem 1.2rem;
+  margin-bottom: 5.1rem;
+}
+@media screen and (min-width: 768px) {
+  .faq {
+    margin-bottom: 0;
+    padding: 3.8rem 1.6rem 1.8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .faq__container {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+}
+.faq__contents {
+  background-color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.8666666667;
+  margin-bottom: 2rem;
+  border: 0.1rem solid #cccccc;
+  border-radius: 1.6rem;
+  padding: 1rem 1.5rem;
+}
+.faq__about {
+  color: #168352;
+  font-size: 1.1rem;
+  border: 0.1rem solid #168352;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  min-width: 10rem;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+}
+.faq__about-second {
+  display: inline-block;
+}
+.faq__question {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem 4.5rem 1rem 4.5rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__question {
+    font-size: 1.8rem;
+  }
+}
+.faq__item {
+  position: relative;
+}
+.faq__item::before {
+  content: "Q.";
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  color: #168352;
+  font-size: 2.4rem;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 0.5rem;
+  font-weight: 700;
+}
+.faq__item::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/assets/image/positive.svg);
+  position: absolute;
+  width: 4rem;
+  height: 2rem;
+  right: -1.5rem;
+  top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__item::after {
+    width: 2.2rem;
+    height: 2.2rem;
+    right: 1rem;
+    top: 1rem;
+  }
+}
+.faq__badge {
+  display: inline-block;
+  padding: 0.7rem 0 0 4.7rem;
+}
+.faq__about {
+  padding: 0.3rem 1.3rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__about {
+    padding: 0.3rem 1.3rem;
+  }
+}
+.faq__about-second {
+  margin-left: 0.5rem;
+}
+.faq .faq__contents.open .faq__item::after {
+  content: "";
+  background-image: url(/assets/image/negative.svg);
+  position: absolute;
+  width: 4rem;
+  height: 2rem;
+  right: 1.7rem;
+  right: -1.5rem;
+  top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .faq .faq__contents.open .faq__item::after {
+    width: 2.2rem;
+    height: 2.2rem;
+    right: 1rem;
+    top: 1rem;
+  }
+}
+.faq__answer {
+  padding: 0rem 0.6rem 0.9rem 0.6rem;
+  display: none;
+  font-size: 1.6rem;
+  line-break: anywhere;
+}
+@media screen and (min-width: 768px) {
+  .faq__answer {
+    padding: 0rem 1.5rem 0.9rem 0.6rem;
+  }
+}
+
 /* features
 -----------------------------------------*/
 .features {
   background-color: #f3f9f6;
-  padding: 4rem 0 2rem;
+  padding: 5rem 0 3.5rem;
 }
 @media screen and (min-width: 768px) {
   .features {
@@ -570,6 +714,7 @@ li {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  line-height: 1.36;
 }
 @media screen and (min-width: 768px) {
   .features__title {
@@ -580,7 +725,7 @@ li {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  padding: 1rem 0 2.3rem;
+  padding: 0rem 0 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .features__title-jp {
@@ -596,7 +741,7 @@ li {
 .features__contents {
   border-radius: 2.4rem;
   background-color: #fff;
-  margin: 0 0 2.5rem 0;
+  margin: 0 0 2rem 0;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1607843137);
 }
 @media screen and (min-width: 768px) {
@@ -607,6 +752,10 @@ li {
 }
 .features__upper {
   width: 100%;
+  height: 20rem;
+}
+.features__image {
+  height: 100%;
 }
 .features__down {
   background: #fff;
@@ -616,8 +765,8 @@ li {
   font-size: 1.8rem;
   color: #111111;
   font-weight: 700;
-  line-height: 1.6;
-  padding: 1.5rem 1rem;
+  line-height: 1.7;
+  padding: 1.3rem 1.6rem 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .features__text {
@@ -718,7 +867,7 @@ li {
 /* products
 -----------------------------------------*/
 .products {
-  padding: 4rem 0 2rem;
+  padding: 5.4rem 0 3.6rem;
 }
 @media screen and (min-width: 768px) {
   .products {
@@ -740,6 +889,7 @@ li {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  line-height: 1.3;
 }
 @media screen and (min-width: 768px) {
   .products__title {
@@ -750,7 +900,7 @@ li {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  padding: 1rem 0 2.3rem;
+  padding: 0 0 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .products__title-jp {
@@ -769,8 +919,8 @@ li {
   border-radius: 2.4rem;
   background-color: #168352;
   display: flex;
-  margin: 0 0 2rem;
-  padding: 1.5rem 2.5rem 1.5rem 2rem;
+  margin: 0 0 1.9rem;
+  padding: 1.9rem 2.5rem 2.2rem 2.3rem;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
@@ -828,8 +978,8 @@ li {
   font-size: 1.8rem;
   color: #fff;
   font-weight: 700;
-  padding: 0 0 0 2rem;
-  line-height: 1.6;
+  padding: 0 0 0 1.8rem;
+  line-height: 1.8;
 }
 @media screen and (min-width: 768px) {
   .products__name {
@@ -868,6 +1018,7 @@ li {
   font-size: 2.2rem;
   font-weight: 700;
   padding: 1rem 0 2.3rem;
+  line-height: 1.36;
 }
 @media screen and (min-width: 768px) {
   .price__title {
@@ -918,7 +1069,7 @@ li {
 -----------------------------------------*/
 .case {
   background-color: #f3f9f6;
-  padding: 4rem 0 2rem;
+  padding: 5rem 0 2.3rem;
 }
 @media screen and (min-width: 768px) {
   .case {
@@ -940,6 +1091,7 @@ li {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  line-height: 1.36;
 }
 @media screen and (min-width: 768px) {
   .case__title {
@@ -950,7 +1102,7 @@ li {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  padding: 1rem 0 2.3rem;
+  padding: 0 0 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .case__title-jp {
@@ -968,13 +1120,22 @@ li {
     width: 37rem;
   }
 }
+.case__item {
+  width: 100%;
+  height: 20.1rem;
+}
+.case__image {
+  width: 100%;
+  height: 100%;
+}
 .case__name {
   color: #09947b;
   font-size: 1.9rem;
   font-weight: 700;
   line-break: anywhere;
-  letter-spacing: -0.04rem;
-  padding: 0 0 2rem 0;
+  letter-spacing: -0.085rem;
+  padding: 0.8rem 0 2.5rem 0;
+  line-height: 1.68;
 }
 @media screen and (min-width: 768px) {
   .case__name {
@@ -1126,7 +1287,7 @@ li {
 /* news
 -----------------------------------------*/
 .news {
-  padding: 4rem 0 4rem;
+  padding: 5rem 0 4rem;
 }
 @media screen and (min-width: 768px) {
   .news {
@@ -1148,6 +1309,7 @@ li {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  line-height: 1.36;
 }
 @media screen and (min-width: 768px) {
   .news__title {
@@ -1158,7 +1320,7 @@ li {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  padding: 1rem 0 2.3rem;
+  padding: 0 0 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .news__title-jp {
