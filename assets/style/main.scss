@@ -156,16 +156,21 @@ li {
             color: #168352;
         }
     }
+    /* ----- header-nav-pc 3ページ目------ */
+    &__nav-pc-list-faq {
+        @include pc {
+            color: #168352;
+        }
+    }
 }
 
 /* ----- hamburger ------ */
 .hamburger {
-    position: absolute;
+    position: fixed;
     top: 6.3rem;
-    width: 100%;
+    left: 1.55rem;
+    right: 1.55rem;
     z-index: 100;
-    width: 35.8rem;
-    height: 21rem;
     margin: 0 auto;
     border-radius: 2.4rem;
     background-color: #168352;
@@ -189,18 +194,22 @@ li {
         display: block;
         height: auto;
         margin: 0;
-        padding: 3rem 0;
+        padding: 4rem 2rem;
         text-align: center;
     }
     &__nav-list-item {
-        padding: 0 0 4rem 0;
         font-size: 1.8rem;
         font-weight: 700;
         line-height: 1;
         color: #FFF;
     }
+    &__nav-list-item:not(:last-child) {
+        margin-bottom: 4rem;
+    }
     &__nav-list-text {
         color: #FFF;
+        width: 100%;
+        display: block;
     }
 }
 
@@ -314,6 +323,7 @@ li {
         display: flex;
         align-items: baseline;
         justify-content: end;
+        cursor: pointer;
 
         @include pc {
             padding: 1.8rem 0 0 0;
@@ -388,6 +398,7 @@ li {
         display: flex;
         align-items: baseline;
         justify-content: end;
+        cursor: pointer;
 
         @include pc {
             padding: 1.7rem 0 0 0;
@@ -719,6 +730,7 @@ li {
     }
     &__item {
         position: relative;
+        cursor: pointer;
 
         &::before {
             content: "Q." ;
@@ -865,7 +877,7 @@ li {
     padding: 5rem 0 3.5rem;
 
     @include pc {
-        padding: 5rem 0 6.5rem;
+        padding: 5.7rem 0 6.5rem;
     }
 
     &__container {
@@ -1100,6 +1112,7 @@ li {
 
         &:hover {
             background-color: #dffaec;
+            opacity: 1;
         }
         &:hover .products__name {
             color: #168352;
@@ -1112,7 +1125,7 @@ li {
     &__contents_01 {
         @include pc {
             width: 52.5rem;
-            padding: 2.4rem 2.5rem 2.5rem 3.5rem;
+            padding: 2.4rem 2.5rem 2.5rem 3.2rem;
         }
     }
     &__contents_02 {
@@ -1120,6 +1133,9 @@ li {
             width: 33.3rem;
             padding: 2.1rem 2.5rem 2rem 2.2rem;
         }
+    }
+    &__inner {
+        display: contents;
     }
     &__photo {
         width: 10rem;
@@ -1162,7 +1178,7 @@ li {
 
         @include pc {
             font-size: 2.4rem;
-            padding: 0 6.8rem 0 2.8rem;
+            padding: 0 6.8rem 0 3.1rem;
         }
     }
     &__name_02 {
@@ -1174,6 +1190,14 @@ li {
     &__name_03 {
         @include pc {
             line-height: 1.76;
+            padding: 0 0 0 2.1rem;
+            line-height: 1.73;
+        }
+    }
+    &__name_04 {
+        padding: 0.4rem 0 0 1.9rem;
+
+        @include pc {
             padding: 0 0 0 2.1rem;
         }
     }
@@ -1650,35 +1674,37 @@ li {
     background-color: #168352;
 
     @include pc {
-        padding: 3.3rem 0 3.3rem;
+        padding: 3.4rem 0 3.4rem 0.1rem;
     }
 
     &__container {
         display: flex;
         justify-content: center;
+        gap: 1.55rem;
+
+        @include pc {
+            gap: 2rem;
+        }
     }
     &__text {
         display: flex;
-    }
-    &__text-left {
         color: #FFF;
         font-size: 1.3rem;
-        padding-right: 1.7rem;
 
         @include pc {
             font-size: 1.5rem;
-            padding-right: 2.2rem;
+        }
+    }
+    &__line {
+        border: 0.1rem solid #fff;
+    }
+    &__text-left {
+        @include pc {
+            letter-spacing: 0.03rem;
         }
     }
     &__text-right {
-        color: #FFF;
-        font-size: 1.3rem;
-        padding-left: 1.7rem;
-        border-left: 0.1rem solid #FFF;
-
         @include pc {
-            font-size: 1.5rem;
-            padding-left: 2rem;
             letter-spacing: -0.09rem;
         }
     }

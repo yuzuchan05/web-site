@@ -79,6 +79,7 @@ li {
   z-index: 1000;
   /* ----- header-nav-pc ------ */
   /* ----- header-nav-pc 2ページ目------ */
+  /* ----- header-nav-pc 3ページ目------ */
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -150,15 +151,19 @@ li {
     color: #168352;
   }
 }
+@media screen and (min-width: 768px) {
+  .header__nav-pc-list-faq {
+    color: #168352;
+  }
+}
 
 /* ----- hamburger ------ */
 .hamburger {
-  position: absolute;
+  position: fixed;
   top: 6.3rem;
-  width: 100%;
+  left: 1.55rem;
+  right: 1.55rem;
   z-index: 100;
-  width: 35.8rem;
-  height: 21rem;
   margin: 0 auto;
   border-radius: 2.4rem;
   background-color: #168352;
@@ -184,18 +189,22 @@ li {
   display: block;
   height: auto;
   margin: 0;
-  padding: 3rem 0;
+  padding: 4rem 2rem;
   text-align: center;
 }
 .hamburger__nav-list-item {
-  padding: 0 0 4rem 0;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1;
   color: #FFF;
 }
+.hamburger__nav-list-item:not(:last-child) {
+  margin-bottom: 4rem;
+}
 .hamburger__nav-list-text {
   color: #FFF;
+  width: 100%;
+  display: block;
 }
 
 /* top
@@ -316,6 +325,7 @@ li {
   display: flex;
   align-items: baseline;
   justify-content: end;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .price-top__item {
@@ -396,6 +406,7 @@ li {
   display: flex;
   align-items: baseline;
   justify-content: end;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .faq-top__item {
@@ -736,6 +747,7 @@ li {
 }
 .faq__item {
   position: relative;
+  cursor: pointer;
 }
 .faq__item::before {
   content: "Q.";
@@ -884,7 +896,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .features {
-    padding: 5rem 0 6.5rem;
+    padding: 5.7rem 0 6.5rem;
   }
 }
 .features__container {
@@ -1134,6 +1146,7 @@ li {
 }
 .products__contents:hover {
   background-color: #dffaec;
+  opacity: 1;
 }
 .products__contents:hover .products__name {
   color: #168352;
@@ -1145,7 +1158,7 @@ li {
 @media screen and (min-width: 768px) {
   .products__contents_01 {
     width: 52.5rem;
-    padding: 2.4rem 2.5rem 2.5rem 3.5rem;
+    padding: 2.4rem 2.5rem 2.5rem 3.2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1153,6 +1166,9 @@ li {
     width: 33.3rem;
     padding: 2.1rem 2.5rem 2rem 2.2rem;
   }
+}
+.products__inner {
+  display: contents;
 }
 .products__photo {
   width: 10rem;
@@ -1198,7 +1214,7 @@ li {
 @media screen and (min-width: 768px) {
   .products__name_01 {
     font-size: 2.4rem;
-    padding: 0 6.8rem 0 2.8rem;
+    padding: 0 6.8rem 0 3.1rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1210,6 +1226,15 @@ li {
 @media screen and (min-width: 768px) {
   .products__name_03 {
     line-height: 1.76;
+    padding: 0 0 0 2.1rem;
+    line-height: 1.73;
+  }
+}
+.products__name_04 {
+  padding: 0.4rem 0 0 1.9rem;
+}
+@media screen and (min-width: 768px) {
+  .products__name_04 {
     padding: 0 0 0 2.1rem;
   }
 }
@@ -1706,37 +1731,39 @@ li {
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 3.3rem 0 3.3rem;
+    padding: 3.4rem 0 3.4rem 0.1rem;
   }
 }
 .footer__container {
   display: flex;
   justify-content: center;
+  gap: 1.55rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    gap: 2rem;
+  }
 }
 .footer__text {
   display: flex;
-}
-.footer__text-left {
   color: #FFF;
   font-size: 1.3rem;
-  padding-right: 1.7rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__text {
+    font-size: 1.5rem;
+  }
+}
+.footer__line {
+  border: 0.1rem solid #fff;
 }
 @media screen and (min-width: 768px) {
   .footer__text-left {
-    font-size: 1.5rem;
-    padding-right: 2.2rem;
+    letter-spacing: 0.03rem;
   }
-}
-.footer__text-right {
-  color: #FFF;
-  font-size: 1.3rem;
-  padding-left: 1.7rem;
-  border-left: 0.1rem solid #FFF;
 }
 @media screen and (min-width: 768px) {
   .footer__text-right {
-    font-size: 1.5rem;
-    padding-left: 2rem;
     letter-spacing: -0.09rem;
   }
 }/*# sourceMappingURL=main.css.map */
