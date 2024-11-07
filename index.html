@@ -101,7 +101,7 @@
                     </div>
                     <div class="features__contents">
                         <div class="features__upper">
-                            <img src="/assets/image/feature_02.png" alt="">
+                            <img class="features__image" src="/assets/image/feature_02.png" alt="">
                         </div>
                         <div class="features__down">
                             <p class="features__text">ビッグデータを駆使して、省電力・効率化を実現</p>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="features__contents">
                         <div class="features__upper">
-                            <img src="/assets/image/feature_03.png" alt="">
+                            <img class="features__image" src="/assets/image/feature_03.png" alt="">
                         </div>
                         <div class="features__down">
                             <p class="features__text">自動運転技術を搭載したロボットで一年中稼働することができる</p>
@@ -139,15 +139,14 @@
                         <div class="products__contents products__contents_01">
                             <div class="products__photo products__photo_01"><img src="/assets/image/products_02.png" alt=""></div>
                             <div class="products__vertical">
-                                <p class="products__name products__name_01">プログレッシブ</p>
-                                <p class="products__name products__name_01">ハーベストボット</p>
+                                <p class="products__name products__name_01">プログレッシブ<br class="no-pc">ハーベストボット</p>
                             </div>
                         </div>
                     </a>
                     <a  href="#">
                         <div class="products__contents products__contents_02">
                             <div class="products__photo products__photo_02"><img src="/assets/image/products_03.png" alt=""></div>
-                            <p class="products__name products__name_02">フューチャーファームマスター</p>
+                            <p class="products__name products__name_02 products__name_03">フューチャーファームマスター</p>
                         </div>
                     </a>
                     <a  href="#">
@@ -174,15 +173,24 @@
                 <h2 class="case__title-jp">お客様の事例紹介</h2>
                 <div class="case__flex">
                     <a  href="#" class="case__contents">
-                        <div class="case__item"><img class="case__image" src="/assets/image/case_01.png" alt=""></div>
+                        <picture>
+                            <source srcset="/assets/image/case_01.png" media="(min-width: 768px)">
+                            <img class="case__item" src="/assets/image/case_sp_01.png" alt="">
+                        </picture>
                         <p class="case__name">利用開始後約1年で売り上げが150％増加</p>
                     </a>
                     <a  href="#" class="case__contents">
-                        <div class="case__item"><img class="case__image" src="/assets/image/case_02.png" alt=""></div>
+                        <picture>
+                            <source srcset="/assets/image/case_02.png" media="(min-width: 768px)">
+                            <img class="case__item" src="/assets/image/case_sp_02.png" alt="">
+                        </picture>
                         <p class="case__name">無駄な作業が減り、30％のコストカットに成功</p>
                     </a>
                     <a  href="#" class="case__contents">
-                        <div class="case__item"><img class="case__image" src="/assets/image/case_03.png" alt=""></div>
+                        <picture>
+                            <source srcset="/assets/image/case_03.png" media="(min-width: 768px)">
+                            <img class="case__item" src="/assets/image/case_sp_03.png" alt="">
+                        </picture>
                         <p class="case__name">24時間対応のサポートデスクがあるのも安心です</p>
                     </a>
                 </div>

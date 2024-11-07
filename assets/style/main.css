@@ -106,7 +106,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .header__logo {
-    max-width: 21rem;
+    width: 22rem;
   }
 }
 .header__logo-image {
@@ -135,7 +135,7 @@ li {
   .header__nav-pc-list {
     display: flex;
     height: 11.4rem;
-    gap: 4.8rem;
+    gap: 3.8rem;
     align-items: center;
   }
 }
@@ -213,7 +213,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .top__container {
-    padding: 2rem 1.6rem 3rem;
+    padding: 1.7rem 1.6rem 0;
     max-width: 120rem;
     margin: 0 auto;
   }
@@ -222,7 +222,7 @@ li {
   .top__inner {
     display: flex;
     align-items: center;
-    padding: 0 0 5rem;
+    padding: 0 0 6rem;
   }
 }
 .top__title {
@@ -236,7 +236,7 @@ li {
     font-size: 4rem;
     margin: 0;
     width: 50%;
-    padding: 0 0 0 3rem;
+    padding: 0 0 0 3.3rem;
   }
 }
 .top__text {
@@ -247,7 +247,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .top__text {
-    padding: 3.3rem 2.5rem 0 2.5rem;
+    padding: 3.1rem 2.5rem 0 2.1rem;
     width: 50%;
   }
 }
@@ -262,96 +262,163 @@ li {
   }
 }
 
-/* top 2ページ目, 3ページ目
+/* top 2ページ目
 -----------------------------------------*/
-.price-top,
-.faq-top {
-  margin-top: 6.3rem;
+.price-top {
+  margin-top: 5.6rem;
 }
 @media screen and (min-width: 768px) {
-  .price-top,
-  .faq-top {
-    margin-top: 11.4rem;
+  .price-top {
+    margin-top: 10.6rem;
   }
 }
-.price-top__container,
-.faq-top__container {
-  padding: 0 1.6rem 0;
-  margin: 2rem 0 2rem;
+.price-top__container {
+  padding: 0 1.55rem 0;
+  margin: 2rem 0 0;
 }
 @media screen and (min-width: 768px) {
-  .price-top__container,
-  .faq-top__container {
+  .price-top__container {
     padding: 2rem 2.6rem 3rem;
-    max-width: 121rem;
+    max-width: 125.3rem;
     margin: 0 auto;
   }
 }
-.price-top__cover-image,
-.faq-top__cover-image {
+.price-top__cover-image {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .price-top__cover-image,
-  .faq-top__cover-image {
-    max-width: 116.8rem;
+  .price-top__cover-image {
+    max-width: 123rem;
     margin: 0 auto;
     display: block;
     position: relative;
   }
 }
-.price-top__title,
-.faq-top__title {
-  font-size: 2.8rem;
+.price-top__title {
+  font-size: 3rem;
   font-weight: 700;
-  margin: 1.5rem 0 2rem;
+  margin: 1.7rem 0 1.6rem;
+  letter-spacing: 0.02rem;
 }
 @media screen and (min-width: 768px) {
-  .price-top__title,
-  .faq-top__title {
+  .price-top__title {
     font-size: 3.6rem;
     margin: 0;
     width: 32.7rem;
-    padding: 2rem 2.5rem 2rem 3.5rem;
+    padding: 2.3rem 2.7rem 2.9rem 3.9rem;
     position: absolute;
     top: 59.1rem;
     background-color: #fff;
     border-radius: 0 4rem 0 0;
   }
 }
-.price-top__item,
+.price-top__item {
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+}
+@media screen and (min-width: 768px) {
+  .price-top__item {
+    padding: 1.8rem 0 0 0;
+  }
+}
+.price-top__text {
+  font-size: 1.2rem;
+  padding: 0 0 1rem 0;
+}
+@media screen and (min-width: 768px) {
+  .price-top__text {
+    padding: 0;
+  }
+}
+.price-top__arrow {
+  width: 0.5rem;
+  height: 1rem;
+  margin: 0 0.7rem;
+}
+@media screen and (min-width: 768px) {
+  .price-top__arrow {
+    margin: 0 0.7rem;
+  }
+}
+
+/* top  3ページ目
+-----------------------------------------*/
+.faq-top {
+  margin-top: 8.3rem;
+}
+@media screen and (min-width: 768px) {
+  .faq-top {
+    margin-top: 10.6rem;
+  }
+}
+.faq-top__container {
+  padding: 0 1.55rem 0;
+  margin: 2rem 0 0;
+}
+@media screen and (min-width: 768px) {
+  .faq-top__container {
+    padding: 5rem 2.6rem 3rem;
+    max-width: 125.4rem;
+    margin: 0 auto;
+  }
+}
+.faq-top__cover-image {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .faq-top__cover-image {
+    max-width: 123rem;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+  }
+}
+.faq-top__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1.7rem 0 1.6rem;
+  letter-spacing: 0.02rem;
+}
+@media screen and (min-width: 768px) {
+  .faq-top__title {
+    font-size: 3.6rem;
+    margin: 0;
+    width: 32.7rem;
+    padding: 2.3rem 2.7rem 3.2rem 4.1rem;
+    position: absolute;
+    top: 59.1rem;
+    background-color: #fff;
+    border-radius: 0 4rem 0 0;
+  }
+}
 .faq-top__item {
   display: flex;
   align-items: baseline;
   justify-content: end;
 }
 @media screen and (min-width: 768px) {
-  .price-top__item,
   .faq-top__item {
-    padding: 2rem 0 0 0;
+    padding: 1.7rem 0 0 0;
   }
 }
-.price-top__text,
 .faq-top__text {
   font-size: 1.2rem;
   padding: 0 0 1rem 0;
 }
 @media screen and (min-width: 768px) {
-  .price-top__text,
   .faq-top__text {
     padding: 0;
   }
 }
-.price-top__arrow,
 .faq-top__arrow {
   width: 0.5rem;
   height: 1rem;
-  margin: 0 0.5rem;
+  margin: 0 0.7rem;
 }
 @media screen and (min-width: 768px) {
-  .price-top__arrow,
   .faq-top__arrow {
-    margin: 0 1rem;
+    margin: 0 0.7rem;
   }
 }
 
@@ -362,7 +429,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .about {
-    padding: 5rem 0 5rem;
+    padding: 5.8rem 0 6.7rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -393,6 +460,7 @@ li {
 @media screen and (min-width: 768px) {
   .about__title-jp {
     font-size: 2.8rem;
+    padding: 0rem 0 2.3rem;
   }
 }
 .about__contents {
@@ -407,9 +475,8 @@ li {
     background-size: unset;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 14%;
-    padding: 0 13rem;
+    gap: 12.5%;
+    padding: 0 11.6rem;
   }
 }
 .about__inner {
@@ -438,7 +505,7 @@ li {
 @media screen and (min-width: 768px) {
   .about__catch {
     font-size: 2rem;
-    padding: 0 0 3.5rem 0;
+    padding: 10rem 0 2.4rem 0;
   }
 }
 .about__text {
@@ -448,6 +515,7 @@ li {
 @media screen and (min-width: 768px) {
   .about__text {
     font-size: 1.5rem;
+    max-width: 41rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -455,18 +523,19 @@ li {
     background-image: url(/assets/image/about_us_pc.png);
     display: flex;
     width: 44.1rem;
-    height: 57.5rem;
+    height: 56.8rem;
+    background-size: contain;
   }
 }
 
 /* gallery 2ページ目
 -----------------------------------------*/
 .gallery {
-  padding: 1rem 1.6rem 0;
+  padding: 0.6rem 1.6rem 0;
 }
 @media screen and (min-width: 768px) {
   .gallery {
-    padding: 5rem 0 3rem;
+    padding: 0.8rem 0 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -479,11 +548,12 @@ li {
 .gallery__title {
   font-size: 2.2rem;
   font-weight: 700;
-  padding: 1rem 0 2.3rem;
+  padding: 1rem 0 0.4rem;
 }
 @media screen and (min-width: 768px) {
   .gallery__title {
     font-size: 2.8rem;
+    padding: 1rem 0 1.4rem;
   }
 }
 .gallery__line {
@@ -494,13 +564,11 @@ li {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  border-radius: 0.5rem;
-  height: 0.2rem;
+  height: 0.3rem;
 }
 @media screen and (min-width: 768px) {
   .gallery__line {
-    margin: 0 0 3rem 0;
-    height: 0.5rem;
+    height: 0.4rem;
   }
 }
 .gallery__line::before {
@@ -510,10 +578,15 @@ li {
   left: 0;
   background-color: #168352;
   height: 100%;
-  width: var(--percentage, 15%);
+  width: var(--percentage, 14%);
+}
+@media screen and (min-width: 768px) {
+  .gallery__line::before {
+    width: var(--percentage, 12.5%);
+  }
 }
 .gallery__image {
-  padding: 2rem 0 2rem;
+  padding: 2.4rem 0 2rem;
   margin: 0 auto;
   height: 23.7rem;
   width: 35.7rem;
@@ -523,6 +596,7 @@ li {
   .gallery__image {
     height: 50rem;
     width: 100%;
+    padding: 2.4rem 0 0;
   }
 }
 
@@ -535,10 +609,10 @@ li {
 }
 @media screen and (min-width: 768px) {
   .swiper {
-    padding: 2rem 0;
+    padding: 1rem 0;
     max-width: 98rem;
     margin-inline: auto;
-    height: 59rem;
+    height: 57rem;
   }
 }
 .swiper-pagination {
@@ -552,24 +626,24 @@ li {
   --swiper-pagination-bullet-inactive-opacity: 1;
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 5rem;
+  bottom: 3.9rem;
 }
 @media screen and (min-width: 768px) {
   .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 8rem;
+    bottom: 6rem;
   }
 }
 
 /* faq 3ページ目
 -----------------------------------------*/
 .faq {
-  padding: 3.4rem 1.6rem 1.2rem;
-  margin-bottom: 5.1rem;
+  padding: 2.6rem 1.6rem 1.2rem;
+  margin-bottom: 13.3rem;
 }
 @media screen and (min-width: 768px) {
   .faq {
     margin-bottom: 0;
-    padding: 3.8rem 1.6rem 1.8rem;
+    padding: 2.8rem 1.6rem 4.9rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -582,10 +656,37 @@ li {
   background-color: #fff;
   font-size: 1.5rem;
   line-height: 1.8666666667;
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
   border: 0.1rem solid #cccccc;
   border-radius: 1.6rem;
   padding: 1rem 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__contents {
+    padding: 1rem 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .faq__contents:nth-of-type(2) {
+    margin-bottom: 2.3rem;
+  }
+}
+.faq__contents:nth-of-type(4) {
+  padding: 1.05rem 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__contents:nth-of-type(4) {
+    margin-bottom: 2.3rem;
+    padding: 1rem 1.5rem;
+  }
+}
+.faq__contents:nth-of-type(8), .faq__contents:nth-of-type(9) {
+  padding: 1.1rem 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__contents:nth-of-type(8), .faq__contents:nth-of-type(9) {
+    padding: 1rem 1.5rem;
+  }
 }
 .faq__about {
   color: #168352;
@@ -594,21 +695,44 @@ li {
   background-color: #fff;
   border-radius: 0.4rem;
   min-width: 10rem;
-  padding: 1rem 1.5rem;
+  padding: 0.1rem 1.1rem;
   display: inline-block;
 }
-.faq__about-second {
-  display: inline-block;
+@media screen and (min-width: 768px) {
+  .faq__about {
+    padding: 0.1rem 0.8rem 0.1rem 0.9rem;
+    width: 10rem;
+  }
+}
+.faq__about_05, .faq__about_06, .faq__about_07 {
+  padding: 0.1rem 1.1rem 0.1rem 1.6rem;
+}
+.faq__about_08, .faq__about_09, .faq__about_10 {
+  padding: 0.1rem 1.1rem 0.1rem 1.7rem;
 }
 .faq__question {
   font-size: 1.6rem;
   font-weight: 700;
-  padding: 1rem 4.5rem 1rem 4.5rem;
+  padding: 0 4.5rem 0 5.1rem;
+  line-height: 1.8;
+  line-break: anywhere;
 }
 @media screen and (min-width: 768px) {
   .faq__question {
     font-size: 1.8rem;
+    padding: 0.7rem 4.5rem 0 5.8rem;
   }
+}
+.faq__question_05 {
+  padding: 0 4.5rem 0 5.1rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__question_05 {
+    padding: 0.7rem 4.5rem 0 5.8rem;
+  }
+}
+.faq__question_09 {
+  line-height: 1.75;
 }
 .faq__item {
   position: relative;
@@ -622,69 +746,133 @@ li {
   width: 3rem;
   height: 3rem;
   position: absolute;
-  left: 0.5rem;
+  left: 0.8rem;
+  top: 0.1rem;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .faq__item::before {
+    left: 1.6rem;
+    top: 0;
+  }
 }
 .faq__item::after {
   content: "";
   display: inline-block;
   background-image: url(/assets/image/positive.svg);
   position: absolute;
-  width: 4rem;
-  height: 2rem;
-  right: -1.5rem;
-  top: 1rem;
+  background-size: 2.6rem;
+  height: 3rem;
+  width: 3rem;
+  right: 0.1rem;
+  top: 1.3rem;
 }
 @media screen and (min-width: 768px) {
   .faq__item::after {
     width: 2.2rem;
     height: 2.2rem;
-    right: 1rem;
-    top: 1rem;
+    right: 1.7rem;
+    top: 1.3rem;
   }
 }
 .faq__badge {
   display: inline-block;
-  padding: 0.7rem 0 0 4.7rem;
-}
-.faq__about {
-  padding: 0.3rem 1.3rem;
+  padding: 0.9rem 0 0 5rem;
 }
 @media screen and (min-width: 768px) {
-  .faq__about {
-    padding: 0.3rem 1.3rem;
+  .faq__badge {
+    padding: 0.9rem 0 0 5.8rem;
   }
 }
 .faq__about-second {
-  margin-left: 0.5rem;
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0.1rem 1.3rem 0.1rem 1.6rem;
 }
 .faq .faq__contents.open .faq__item::after {
   content: "";
   background-image: url(/assets/image/negative.svg);
   position: absolute;
-  width: 4rem;
-  height: 2rem;
-  right: 1.7rem;
-  right: -1.5rem;
-  top: 1rem;
+  background-size: 2.6rem;
+  height: 3rem;
+  width: 3rem;
+  right: 0.1rem;
+  top: 1.3rem;
 }
 @media screen and (min-width: 768px) {
   .faq .faq__contents.open .faq__item::after {
     width: 2.2rem;
     height: 2.2rem;
-    right: 1rem;
-    top: 1rem;
+    right: 1.7rem;
+    top: 1.3rem;
   }
 }
 .faq__answer {
-  padding: 0rem 0.6rem 0.9rem 0.6rem;
+  padding: 0rem 0.6rem 0.6rem 1rem;
+  line-height: 1.76;
   display: none;
   font-size: 1.6rem;
   line-break: anywhere;
 }
 @media screen and (min-width: 768px) {
   .faq__answer {
-    padding: 0rem 1.5rem 0.9rem 0.6rem;
+    padding: 1.7rem 1.5rem 0.8rem 1.7rem;
+  }
+}
+.faq__answer_02, .faq__answer_03 {
+  padding: 0.1rem 0.6rem 0.6rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__answer_02, .faq__answer_03 {
+    padding: 1.7rem 1.5rem 0.8rem 1.8rem;
+  }
+}
+.faq__answer_04 {
+  letter-spacing: 0.015rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__answer_04 {
+    letter-spacing: 0;
+  }
+}
+.faq__answer_05 {
+  padding: 0 0.6rem 0.6rem 1.1rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__answer_05 {
+    padding: 1.7rem 1.5rem 0.7rem 1.8rem;
+  }
+}
+.faq__answer_06 {
+  padding: 0rem 0.6rem 0.6rem 1.15rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__answer_06 {
+    padding: 1.7rem 1.5rem 0.7rem 1.7rem;
+  }
+}
+.faq__answer_07, .faq__answer_08, .faq__answer_10 {
+  padding: 0rem 0.6rem 0.7rem 1.15rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__answer_07, .faq__answer_08, .faq__answer_10 {
+    padding: 1.7rem 1.5rem 0.7rem 1.8rem;
+  }
+}
+.faq__answer_09 {
+  padding: 0rem 0.6rem 0.5rem 1.1rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__answer_09 {
+    padding: 1.7rem 1.5rem 0.8rem 1.75rem;
+  }
+}
+.faq__answer_11 {
+  padding: 0.85rem 0.6rem 0.7rem 1.15rem;
+}
+@media screen and (min-width: 768px) {
+  .faq__answer_11 {
+    padding: 1.7rem 1.5rem 0.8rem 1.7rem;
   }
 }
 
@@ -696,7 +884,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .features {
-    padding: 4rem 0 6rem;
+    padding: 5rem 0 6.5rem;
   }
 }
 .features__container {
@@ -730,12 +918,13 @@ li {
 @media screen and (min-width: 768px) {
   .features__title-jp {
     font-size: 2.8rem;
+    padding: 0rem 0 2.1rem;
   }
 }
 @media screen and (min-width: 768px) {
   .features__flex {
     display: flex;
-    gap: 2.5rem;
+    gap: 3.3rem;
   }
 }
 .features__contents {
@@ -754,6 +943,11 @@ li {
   width: 100%;
   height: 20rem;
 }
+@media screen and (min-width: 768px) {
+  .features__upper {
+    height: 22.7rem;
+  }
+}
 .features__image {
   height: 100%;
 }
@@ -771,23 +965,23 @@ li {
 @media screen and (min-width: 768px) {
   .features__text {
     font-size: 1.9rem;
-    padding: 1.5rem 1.9rem;
+    padding: 1.3rem 2rem;
   }
 }
 
 /* features 2ページ目
 -----------------------------------------*/
 .price-features {
-  padding: 1rem 1.6rem 0;
+  padding: 1.5rem 1.6rem 0;
 }
 @media screen and (min-width: 768px) {
   .price-features {
-    padding: 5rem 0 2rem;
+    padding: 1.3rem 0 1rem;
   }
 }
 @media screen and (min-width: 768px) {
   .price-features__container {
-    max-width: 83rem;
+    max-width: 83.1rem;
     margin: 0 auto;
     padding: 0 1.6rem;
   }
@@ -795,11 +989,12 @@ li {
 .price-features__title {
   font-size: 2.2rem;
   font-weight: 700;
-  padding: 1rem 0 2.3rem;
+  padding: 0.9rem 0 0.4rem;
 }
 @media screen and (min-width: 768px) {
   .price-features__title {
     font-size: 2.8rem;
+    padding: 0.9rem 0 1.4rem;
   }
 }
 .price-features__line {
@@ -810,13 +1005,12 @@ li {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  border-radius: 0.5rem;
-  height: 0.2rem;
+  height: 0.3rem;
 }
 @media screen and (min-width: 768px) {
   .price-features__line {
-    margin: 0 0 3rem 0;
-    height: 0.5rem;
+    margin: 0 0 3.3rem 0;
+    height: 0.4rem;
   }
 }
 .price-features__line::before {
@@ -826,16 +1020,21 @@ li {
   left: 0;
   background-color: #168352;
   height: 100%;
-  width: var(--percentage, 15%);
+  width: var(--percentage, 14%);
+}
+@media screen and (min-width: 768px) {
+  .price-features__line::before {
+    width: var(--percentage, 12.5%);
+  }
 }
 @media screen and (min-width: 768px) {
   .price-features__flex {
     display: flex;
-    gap: 3rem;
+    gap: 3.2rem;
   }
 }
 .price-features__item {
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 0.85rem 0;
 }
 @media screen and (min-width: 768px) {
   .price-features__item {
@@ -844,23 +1043,25 @@ li {
   }
 }
 .price-features__image {
-  padding: 2rem 0 2rem;
+  padding: 2.5rem 0 0.7rem;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .price-features__image {
     padding: 0;
+    height: 15rem;
   }
 }
 .price-features__text {
   font-size: 1.8rem;
   font-weight: 700;
   line-break: anywhere;
-  letter-spacing: 0.005rem;
+  letter-spacing: 0.009rem;
+  line-height: 1.76;
 }
 @media screen and (min-width: 768px) {
   .price-features__text {
-    padding: 1rem 0 0 0;
+    padding: 0.75rem 0 0 0;
   }
 }
 
@@ -871,7 +1072,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .products {
-    padding: 4rem 0 6rem;
+    padding: 6.4rem 0 6.3rem;
   }
 }
 .products__container {
@@ -905,13 +1106,15 @@ li {
 @media screen and (min-width: 768px) {
   .products__title-jp {
     font-size: 2.8rem;
+    padding: 0 0 2.5rem;
   }
 }
 @media screen and (min-width: 768px) {
   .products__flex {
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
+    column-gap: 4.9rem;
+    row-gap: 4rem;
     justify-content: center;
   }
 }
@@ -926,6 +1129,7 @@ li {
 @media screen and (min-width: 768px) {
   .products__contents {
     padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    margin: 0;
   }
 }
 .products__contents:hover {
@@ -941,11 +1145,13 @@ li {
 @media screen and (min-width: 768px) {
   .products__contents_01 {
     width: 52.5rem;
+    padding: 2.4rem 2.5rem 2.5rem 3.5rem;
   }
 }
 @media screen and (min-width: 768px) {
   .products__contents_02 {
     width: 33.3rem;
+    padding: 2.1rem 2.5rem 2rem 2.2rem;
   }
 }
 .products__photo {
@@ -986,25 +1192,36 @@ li {
     padding: 0 0 0 2.8rem;
   }
 }
+.products__name_01 {
+  padding: 0 1.8rem 0 1.8rem;
+}
 @media screen and (min-width: 768px) {
   .products__name_01 {
     font-size: 2.4rem;
+    padding: 0 6.8rem 0 2.8rem;
   }
 }
 @media screen and (min-width: 768px) {
   .products__name_02 {
     font-size: 2rem;
+    padding: 0 0 0 2.3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .products__name_03 {
+    line-height: 1.76;
+    padding: 0 0 0 2.1rem;
   }
 }
 
 /* price 2ページ目
 -----------------------------------------*/
 .price {
-  padding: 2rem 1.6rem 2rem;
+  padding: 3.5rem 1.6rem 2rem;
 }
 @media screen and (min-width: 768px) {
   .price {
-    padding: 5rem 0 2rem;
+    padding: 3.7rem 0 0rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1017,12 +1234,13 @@ li {
 .price__title {
   font-size: 2.2rem;
   font-weight: 700;
-  padding: 1rem 0 2.3rem;
+  padding: 1rem 0 0.7rem;
   line-height: 1.36;
 }
 @media screen and (min-width: 768px) {
   .price__title {
     font-size: 2.8rem;
+    padding: 1rem 0 2rem;
   }
 }
 .price__line {
@@ -1033,13 +1251,12 @@ li {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  border-radius: 0.5rem;
-  height: 0.2rem;
+  height: 0.3rem;
 }
 @media screen and (min-width: 768px) {
   .price__line {
-    margin: 0 0 3rem 0;
-    height: 0.5rem;
+    margin: 0 0 0.9rem 0;
+    height: 0.4rem;
   }
 }
 .price__line::before {
@@ -1049,20 +1266,21 @@ li {
   left: 0;
   background-color: #168352;
   height: 100%;
-  width: var(--percentage, 15%);
+  width: var(--percentage, 14%);
+}
+@media screen and (min-width: 768px) {
+  .price__line::before {
+    width: var(--percentage, 12.5%);
+  }
 }
 .price__text {
   font-size: 3.2rem;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+  padding: 0.9rem 0 0 0;
 }
 .price__small {
-  font-size: 2rem;
-}
-@media screen and (min-width: 768px) {
-  .price__small {
-    font-size: 1.8rem;
-  }
+  font-size: 1.6rem;
 }
 
 /* case
@@ -1073,7 +1291,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .case {
-    padding: 4rem 0 5rem;
+    padding: 5.9rem 6rem;
   }
 }
 .case__container {
@@ -1107,6 +1325,7 @@ li {
 @media screen and (min-width: 768px) {
   .case__title-jp {
     font-size: 2.8rem;
+    padding: 0 0 2.3rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1123,6 +1342,11 @@ li {
 .case__item {
   width: 100%;
   height: 20.1rem;
+}
+@media screen and (min-width: 768px) {
+  .case__item {
+    height: 22.5rem;
+  }
 }
 .case__image {
   width: 100%;
@@ -1147,11 +1371,11 @@ li {
 /* spec 2ページ目
 -----------------------------------------*/
 .spec {
-  padding: 2rem 1.6rem 4rem;
+  padding: 1.3rem 1.6rem 6.4rem;
 }
 @media screen and (min-width: 768px) {
   .spec {
-    padding: 5rem 0 7rem;
+    padding: 3.8rem 0 7rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1164,11 +1388,12 @@ li {
 .spec__title {
   font-size: 2.2rem;
   font-weight: 700;
-  padding: 1rem 0 2.3rem;
+  padding: 1rem 0 0.5rem;
 }
 @media screen and (min-width: 768px) {
   .spec__title {
     font-size: 2.8rem;
+    padding: 1rem 0 1.5rem;
   }
 }
 .spec__line {
@@ -1179,13 +1404,12 @@ li {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  border-radius: 0.5rem;
-  height: 0.2rem;
+  height: 0.3rem;
 }
 @media screen and (min-width: 768px) {
   .spec__line {
-    margin: 0 0 2.5rem 0;
-    height: 0.5rem;
+    margin: 0 0 1rem 0;
+    height: 0.4rem;
   }
 }
 .spec__line::before {
@@ -1195,12 +1419,17 @@ li {
   left: 0;
   background-color: #168352;
   height: 100%;
-  width: var(--percentage, 15%);
+  width: var(--percentage, 14%);
+}
+@media screen and (min-width: 768px) {
+  .spec__line::before {
+    width: var(--percentage, 12.5%);
+  }
 }
 .spec__sub-title {
   font-size: 2rem;
   font-weight: 700;
-  padding: 1rem 0 2.3rem 1.6rem;
+  padding: 1.9rem 0 1.6rem 1.8rem;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -1208,6 +1437,7 @@ li {
     font-size: 2.4rem;
     max-width: 73.8rem;
     margin: 0 auto;
+    padding: 1.9rem 0 2.6rem 1.8rem;
   }
 }
 .spec__sub-title::before {
@@ -1216,7 +1446,7 @@ li {
   position: absolute;
   height: 3rem;
   width: 0.2rem;
-  top: 1.3rem;
+  top: 2.3rem;
   left: -0.1rem;
 }
 @media screen and (min-width: 768px) {
@@ -1266,32 +1496,32 @@ li {
   font-size: 1.6rem;
   font-weight: 700;
   background-color: #f5f5f5;
-  padding: 0.8rem 1.2rem 0.8rem 2rem;
+  padding: 0.6rem 1.2rem 0.8rem 1.8rem;
 }
 @media screen and (min-width: 768px) {
   .spec__table-item {
-    width: 20rem;
-    padding: 2rem 1.2rem 2rem 2rem;
+    width: 19.9rem;
+    padding: 1.8rem 1.2rem 2.1rem 1.8rem;
   }
 }
 .spec__table-discription {
   font-size: 1.6rem;
-  padding: 0.8rem 1.2rem 0.8rem 2rem;
+  padding: 0.6rem 1.2rem 0.79rem 1.8rem;
 }
 @media screen and (min-width: 768px) {
   .spec__table-discription {
-    padding: 2rem 1.2rem 2rem 2rem;
+    padding: 1.8rem 1.2rem 2.1rem 2.2rem;
   }
 }
 
 /* news
 -----------------------------------------*/
 .news {
-  padding: 5rem 0 4rem;
+  padding: 5rem 0 6.2rem;
 }
 @media screen and (min-width: 768px) {
   .news {
-    padding: 4rem 0 5rem;
+    padding: 5.9rem 0 7rem;
   }
 }
 .news__container {
@@ -1299,7 +1529,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .news__container {
-    max-width: 90rem;
+    max-width: 93.2rem;
     margin: 0 auto;
   }
 }
@@ -1320,23 +1550,24 @@ li {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  padding: 0 0 1.5rem;
+  padding: 0 0 1.6rem;
 }
 @media screen and (min-width: 768px) {
   .news__title-jp {
     font-size: 2.8rem;
+    padding: 0 0 2.4rem;
   }
 }
 .news__contents {
   border-top: 0.1rem solid #dddddd;
 }
 .news__list {
-  padding: 1.2rem 0 0.7rem;
+  padding: 1.4rem 0 1rem;
   border-bottom: 0.1rem solid #dddddd;
 }
 @media screen and (min-width: 768px) {
   .news__list {
-    padding: 1.2rem 0 0.7rem;
+    padding: 1.3rem 0 1.7rem;
   }
 }
 .news__badge {
@@ -1362,13 +1593,13 @@ li {
 .news__date {
   display: inline-block;
   width: 6rem;
-  letter-spacing: 0.01rem;
   color: #222222;
   font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .news__date {
     font-size: 1.4rem;
+    width: 5.8rem;
   }
 }
 .news__text {
@@ -1377,12 +1608,13 @@ li {
   color: #09947b;
   font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: -0.004rem;
+  letter-spacing: 0.002rem;
+  line-height: 1.7;
 }
 @media screen and (min-width: 768px) {
   .news__text {
     display: unset;
-    margin-left: 5rem;
+    margin-left: 4.8rem;
   }
 }
 .news__btn {
@@ -1396,8 +1628,8 @@ li {
   color: #fff;
   font-size: 1.8rem;
   font-weight: 700;
-  margin: 2.7rem auto 0;
-  box-shadow: 0 0.4rem 0 rgb(6, 102, 85);
+  margin: 2.4rem auto 0;
+  box-shadow: 0 0.6rem 0 rgb(6, 102, 85);
   transition: all 0.2s ease;
 }
 @media screen and (min-width: 768px) {
@@ -1447,13 +1679,18 @@ li {
   color: #fff;
   border: 0.2rem solid #fff;
   border-radius: 4rem;
-  width: 35rem;
-  height: 7rem;
+  width: 36rem;
+  height: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .contact__btn {
+    padding: 0 0 0.4rem 0;
+  }
 }
 .contact__btn:hover {
   background-color: #fff;
@@ -1464,12 +1701,12 @@ li {
 /* footer
 -----------------------------------------*/
 .footer {
-  padding: 2rem 0 2rem;
+  padding: 2.2rem 0;
   background-color: #168352;
 }
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 3.5rem 0 3.5rem;
+    padding: 3.3rem 0 3.3rem;
   }
 }
 .footer__container {
@@ -1482,23 +1719,24 @@ li {
 .footer__text-left {
   color: #FFF;
   font-size: 1.3rem;
-  padding-right: 1.3rem;
+  padding-right: 1.7rem;
 }
 @media screen and (min-width: 768px) {
   .footer__text-left {
     font-size: 1.5rem;
-    padding-right: 2.3rem;
+    padding-right: 2.2rem;
   }
 }
 .footer__text-right {
   color: #FFF;
   font-size: 1.3rem;
-  padding-left: 1.3rem;
+  padding-left: 1.7rem;
   border-left: 0.1rem solid #FFF;
 }
 @media screen and (min-width: 768px) {
   .footer__text-right {
     font-size: 1.5rem;
-    padding-left: 2.3rem;
+    padding-left: 2rem;
+    letter-spacing: -0.09rem;
   }
 }/*# sourceMappingURL=main.css.map */
