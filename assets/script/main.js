@@ -1,12 +1,15 @@
 /* ハンバーガーメニュー
 -----------------------------------------*/
 $(document).ready(function () {
-    $(".header__hamburger-icon").on("click", function (e) {
+    $(".hamburger-icon").on("click", function (e) {
         $(".hamburger").fadeToggle();
     });
-
     // ハンバーガーメニューを閉じる
     $('.hamburger a[href^="#"]').click(function () {
+        $(".hamburger").fadeOut();
+    });
+    // 画面幅のサイズが変わったら
+    $(window).on('resize', function() {
         $(".hamburger").fadeOut();
     });
 });
