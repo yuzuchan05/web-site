@@ -640,7 +640,7 @@ li {
   --swiper-pagination-bullet-inactive-opacity: 1;
 }
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 3.9rem;
+  bottom: 5.25rem;
 }
 @media screen and (min-width: 768px) {
   .swiper-pagination-bullets.swiper-pagination-horizontal {
